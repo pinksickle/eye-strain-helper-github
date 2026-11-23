@@ -32,7 +32,7 @@ class BreakPopup : public geode::Popup {
             if (!Popup::init(340.f, 210.f)) return false;
 
             this->setID("BreakPopup"_spr);
-            this->setTitle("look at a point in the far distance");
+            this->setTitle("look at a point far in the distance");
 
             m_mainLayer->removeChildByID("background");
             m_mainLayer->removeChildByID("close-button");
@@ -86,7 +86,7 @@ class BreakPopup : public geode::Popup {
             if(StateManager::get()->getBreakState() == BreakState::None) {
                 removeMeAndCleanup();
                 countdownLabel->autorelease();
-                countdownLabel = nullptr;
+                delete countdownLabel;
             }
         }
 };

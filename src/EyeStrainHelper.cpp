@@ -42,6 +42,8 @@ void StateManager::endBreak() {
         if(Settings::pauseAfterBreak()) {
             PlayLayer::get()->pauseGame(false);
         }
+
+        static_cast<ESHBaseGameLayer*>(GJBaseGameLayer::get())->m_fields->breakPopup = nullptr;
     }
 }
 

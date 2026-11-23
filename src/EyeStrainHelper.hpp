@@ -16,8 +16,8 @@
     #ifdef INSTANT_DEBUG_LEVEL
         #define INSTANT_DEBUG_LEVEL_ID 152764593
     #endif
-    #define BREAK_EVERY_ATTEMPT
-    //#define BREAK_EVERY_CHECKPOINT
+    //#define BREAK_EVERY_ATTEMPT
+    #define BREAK_EVERY_CHECKPOINT
 #endif
 
 namespace eyestrainhelper {

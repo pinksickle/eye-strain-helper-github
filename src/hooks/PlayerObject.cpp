@@ -11,7 +11,26 @@ using namespace geode::prelude;
 using namespace eyestrainhelper;
 
 class $modify(PlayerObject) {
-    void playerDestroyed(bool noEffects) {
+    struct Fields {
+        bool hasPlayerDiedAtLeastOnce = false;
+    };
+
+    void resetObject() {
+        PlayerObject::resetObject();
+        if(isVanillaPlayer() && m_fields->hasPlayerDiedAtLeastOnce) {
+            auto stateManager = eyestrainhelper::StateManager::get();
+            #ifdef BREAK_EVERY_ATTEMPT
+            stateManager->startBreak(BreakLocation::Gameplay);
+            #else
+            if(stateManager->getBreakState() == BreakState::Armed) {
+                stateManager->startBreak(BreakLocation::Gameplay);
+            }
+            #endif
+            
+        }
+    }
+
+    /*void playerDestroyed(bool noEffects) {
         if(isVanillaPlayer()) {
             auto stateManager = eyestrainhelper::StateManager::get();
             #ifdef BREAK_EVERY_ATTEMPT
@@ -21,7 +40,13 @@ class $modify(PlayerObject) {
                 stateManager->startBreak(BreakLocation::Gameplay);
             }
             #endif
+            
         }
+        PlayerObject::playerDestroyed(noEffects);
+    }*/
+
+    void playerDestroyed(bool noEffects) {
+        m_fields->hasPlayerDiedAtLeastOnce = true;
         PlayerObject::playerDestroyed(noEffects);
     }
 

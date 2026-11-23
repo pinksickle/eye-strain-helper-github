@@ -4,9 +4,6 @@ Are you concerned about your vision? Are you sick of external RSI prevention pro
 
 Eye Strain Helper starts configurable strain-preventitive breaks for you after you die in-game. It can also optionally start said breaks when you hit a platformer checkpoint, or during rated auto levels.
 
-
-
-
 ## Attribution
 
 `break_over.ogg` sourced from [Safe Eyes](https://github.com/slgobinath/safeeyes/tree/master)
