@@ -1,12 +1,8 @@
 #pragma once
 
-#include "Geode/loader/Log.hpp"
-#include "Geode/loader/SettingV3.hpp"
 #include "utils/Singleton.hpp"
 #include <cstdint>
 #include <Geode/Geode.hpp>
-#include "Geode/loader/Log.hpp"
-#include "EyeStrainHelper.hpp"
 #include "Settings.hpp"
 
 //#define ESH_DEBUG_MODE

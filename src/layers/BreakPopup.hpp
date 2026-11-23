@@ -1,8 +1,6 @@
 #pragma once
 #include "../EyeStrainHelper.hpp"
-#include "Geode/cocos/label_nodes/CCLabelAtlas.h"
 #include "Geode/cocos/label_nodes/CCLabelBMFont.h"
-#include "Geode/loader/Log.hpp"
 #include "Geode/ui/Button.hpp"
 #include "Geode/ui/Layout.hpp"
 #include "Geode/ui/Popup.hpp"

@@ -1,7 +1,5 @@
 #include "../EyeStrainHelper.hpp"
-#include "Geode/loader/Log.hpp"
 #include "Geode/modify/Modify.hpp"
-#include "Geode/ui/Notification.hpp"
 #include <Geode/binding/FLAlertLayer.hpp>
 #include <Geode/binding/GJBaseGameLayer.hpp>
 #include <Geode/binding/PlayLayer.hpp>
@@ -29,21 +27,6 @@ class $modify(PlayerObject) {
             
         }
     }
-
-    /*void playerDestroyed(bool noEffects) {
-        if(isVanillaPlayer()) {
-            auto stateManager = eyestrainhelper::StateManager::get();
-            #ifdef BREAK_EVERY_ATTEMPT
-            stateManager->startBreak(BreakLocation::Gameplay);
-            #else
-            if(stateManager->getBreakState() == BreakState::Armed) {
-                stateManager->startBreak(BreakLocation::Gameplay);
-            }
-            #endif
-            
-        }
-        PlayerObject::playerDestroyed(noEffects);
-    }*/
 
     void playerDestroyed(bool noEffects) {
         m_fields->hasPlayerDiedAtLeastOnce = true;
