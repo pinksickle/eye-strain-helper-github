@@ -1,6 +1,6 @@
 # 2.0.0-beta.1
 - Completely rewrote the mod from the ground up
-- Updated to GD 2.209/Geode 6.0.0-beta.1
+- Updated to GD 2.209
 - Temporarily removed safe eyes integration
 - Temporarily removed breaks in the editor
 - Added pause during auto levels
