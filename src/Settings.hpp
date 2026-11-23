@@ -1,21 +1,16 @@
 #pragma once
 
-#include <cstdint>
-
-//Debug flags
-#define INSTANT_TOWER_LOAD
+using namespace geode::prelude;
 
 class Settings {
     public:
-    static bool enabled();
-    static bool breakEveryAttempt();
-    static bool allowSkipping();
-    static bool safeEyesBlockInLevels();
-    static bool safeEyesOverESHinEditor();
-    static bool breakOnPlatformerCP();
-    static bool shouldPauseAfterBreak();
-    //static bool instantTowerLoad();
-    static int64_t breakDuration();
-    static int64_t minutesBetweenBreaks();
-    static int64_t allowedSkips();
+        static int64_t shortBreakDuration() { return geode::getMod()->getSettingValue<int64_t>("shortBreakDuration"); }
+        static int64_t longBreakDuration() { return geode::getMod()->getSettingValue<int64_t>("longBreakDuration"); }
+        static float timeBetweenBreaks() { return geode::getMod()->getSettingValue<float>("timeBetweenBreaks"); }
+        static bool breakAtCheckpoints() { return geode::getMod()->getSettingValue<bool>("breakAtCheckpoints"); }
+        static bool breakDuringAutos() { return geode::getMod()->getSettingValue<bool>("breakDuringAutos"); }
+        static bool allowSkipping() { return geode::getMod()->getSettingValue<bool>("allowSkipping"); }
+        static bool limitSkipping() { return geode::getMod()->getSettingValue<bool>("limitSkipping"); }
+        static int64_t maxSkips() { return geode::getMod()->getSettingValue<int64_t>("maxSkips"); }
+        static bool pauseAfterBreak() { return geode::getMod()->getSettingValue<bool>("pauseAfterBreak"); }
 };

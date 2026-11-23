@@ -1,1 +1,0 @@
-I'll make a ko-fi or something some day

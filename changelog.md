@@ -1,3 +1,10 @@
+# 2.0.0-beta.1
+- Completely rewrote the mod from the ground up
+- Updated to GD 2.209/Geode 6.0.0-beta.1
+- Temporarily removed safe eyes integration
+- Temporarily removed breaks in the editor
+- Added pause during auto levels
+
 # 1.2.3
 - Cosmetic and minor internal changes.
 
@@ -37,7 +44,6 @@
 
 # 1.0.1
 - Fixed a really silly typo
-- Added my discord username to `about.md` so people can contact me with questions
 - Updated `mod.json`
 - Apparently forgot to edit changelog.md to add this before submitting to the index, so these patch notes aren't gonna show up until the next version
 

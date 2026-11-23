@@ -1,16 +1,9 @@
 # Eye Strain Helper
 
-This mod is designed to help prevent eye strain without interrupting your runs like an external tool would.
+Are you concerned about your vision? Are you sick of external RSI prevention programs interrupting your runs? Eye Strain Helper can help! 
 
-## Features
-- [x] Optional ability to skip breaks
-- [x] Configurable time between breaks
-- [x] Configurable duration of breaks
-- [x] Configurable option to start breaks when hitting a checkpoint in platformer mode
-- [x] Option to automatically pause after breaks
-- [x] Safe Eyes integration w/a custom plugin
-    - [x] Option to block Safe Eyes breaks while playing levels
-    - [x] Option to prefer Safe Eyes breaks while in the editor
-- More planned!
+Eye Strain Helper starts configurable strain-preventitive breaks for you after you die in-game. It can also optionally start said breaks when you hit a platformer checkpoint, or during rated auto levels.
 
-For bug reports, please create an issue on the mod's codeberg page.
+
+
+Please report bugs through the Codeberg page for this mod.
