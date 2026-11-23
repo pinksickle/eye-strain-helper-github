@@ -9,7 +9,7 @@
 #include "EyeStrainHelper.hpp"
 #include "Settings.hpp"
 
-#define ESH_DEBUG_MODE
+//#define ESH_DEBUG_MODE
 
 #ifdef ESH_DEBUG_MODE
     //#define INSTANT_DEBUG_LEVEL

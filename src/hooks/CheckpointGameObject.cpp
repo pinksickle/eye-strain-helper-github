@@ -7,7 +7,6 @@ using namespace geode::prelude;
 using namespace eyestrainhelper;
 
 class $modify(CheckpointGameObject) {
-    
     void triggerObject(GJBaseGameLayer* layer, int uniqueID, std::vector<int> const* remapKeys) {
         CheckpointGameObject::triggerObject(layer, uniqueID, remapKeys);
         auto stateManager = StateManager::get();
