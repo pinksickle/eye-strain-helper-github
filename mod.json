@@ -15,7 +15,7 @@
 		"geode.node-ids": ">=1.24.0-beta.1"
 	},
 	"links": {
-		"source": "https://codeberg.org/meltyonice/geode-eyestrain"
+		"source": "https://codeberg.org/meltyonice/eye-strain-helper"
 	},
 	"tags": [
 		"utility",
