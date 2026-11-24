@@ -84,7 +84,7 @@ class BreakPopup : public geode::Popup {
             if(StateManager::get()->getBreakState() == BreakState::None) {
                 removeMeAndCleanup();
                 countdownLabel->autorelease();
-                delete countdownLabel;
+                countdownLabel = nullptr;
             }
         }
 };

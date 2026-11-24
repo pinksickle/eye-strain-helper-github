@@ -1,5 +1,5 @@
 {
-	"geode": "6.0.0-beta.1",
+	"geode": "6.0.0-beta.2",
 	"gd": {
 		"win": "2.2091",
 		"android": "2.2091",
@@ -8,7 +8,7 @@
 	},
 	"id": "meltyonice.eye-strain-helper",
 	"name": "Eye Strain Helper",
-	"version": "v2.0.0-beta.1",
+	"version": "v2.0.0-beta.2",
 	"developer": "PinkSickle",
 	"description": "Keep your eyes healthy while playing GD!",
 	"dependencies": {

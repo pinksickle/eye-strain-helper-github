@@ -1,4 +1,5 @@
 #include "../EyeStrainHelper.hpp"
+#include "Geode/loader/Log.hpp"
 #include "Geode/modify/Modify.hpp"
 #include <Geode/modify/PlayLayer.hpp>
 
@@ -6,12 +7,12 @@ using namespace geode::prelude;
 using namespace eyestrainhelper;
 
 class $modify(PlayLayer) {
-    void onExit() {
+    void onQuit() {
         auto stateManager = StateManager::get();
         if(stateManager->getBreakState() == BreakState::Active) {
             stateManager->endBreak();
         }
-        PlayLayer::onExit();
+        PlayLayer::onQuit();
     }
 
     void resetLevel() {
