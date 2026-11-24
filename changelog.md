@@ -1,3 +1,7 @@
+# 2.0.0-beta.2
+- Fixed a crash when entering levels
+- Updated to SDK version 6.0.0-beta.2
+
 # 2.0.0-beta.1
 - Completely rewrote the mod from the ground up
 - Updated to GD 2.209
